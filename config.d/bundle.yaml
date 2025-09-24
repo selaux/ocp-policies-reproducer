@@ -1,0 +1,31 @@
+{
+  "bundles":
+    {
+      "bundle":
+        {
+          "object_storage": { "filesystem": { "path": "bundle.tar.gz" } },
+          "requirements": [{ "source": "package1" }, { "source": "package2" }],
+        },
+    },
+  "sources":
+    {
+      "package1":
+        {
+          "git":
+            {
+              "repo": "https://github.com/selaux/ocp-policies-reproducer.git",
+              "reference": "policy1",
+              "excluded_files": [".*/*"],
+            },
+        },
+      "package2":
+        {
+          "git":
+            {
+              "repo": "https://github.com/selaux/ocp-policies-reproducer.git",
+              "reference": "policy2",
+              "excluded_files": [".*/*"],
+            },
+        },
+    },
+}
