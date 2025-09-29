@@ -1,0 +1,27 @@
+sources:
+  match-v1:
+    builtin: match-v1
+  template.entitlements:1.0:
+    requirements:
+      - source: template.entitlements:1.0-entrypoint-main
+      - source: template.entitlements:1.0-object
+      - source: template.entitlements:1.0-completions
+      - source: template.entitlements:1.0-conflicts
+      - source: template.entitlements:1.0-transform
+      - source: template.entitlements:1.0-library
+  template.entitlements:1.0-completions:
+    builtin: entitlements-v1/completions
+  template.entitlements:1.0-conflicts:
+    builtin: entitlements-v1/conflicts
+  template.entitlements:1.0-entrypoint-main:
+    builtin: entitlements-v1/main
+  template.entitlements:1.0-library:
+    builtin: entitlements-v1/library
+  template.entitlements:1.0-object:
+    builtin: entitlements-v1/object
+  template.entitlements:1.0-stack:
+    requirements:
+      - source: template.entitlements:1.0-library
+      - source: match-v1
+  template.entitlements:1.0-transform:
+    builtin: entitlements-v1/transform
