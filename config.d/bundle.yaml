@@ -18,7 +18,6 @@
               "reference": "policy1",
               "excluded_files": [".*/*", "pipeline.yaml"],
             },
-          "requirements": [{ "source": "template.entitlements:1.0" }],
         },
       "package2":
         {
@@ -28,7 +27,6 @@
               "reference": "policy2",
               "excluded_files": [".*/*", "pipeline.yaml"],
             },
-          "requirements": [{ "source": "template.entitlements:1.0-stack" }],
         },
     },
 }
