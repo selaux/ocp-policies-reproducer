@@ -16,7 +16,7 @@
             {
               "repo": "https://github.com/selaux/ocp-policies-reproducer.git",
               "reference": "policy1",
-              "excluded_files": [".*/*"],
+              "excluded_files": [".*/*", "pipeline.yaml"],
             },
           "requirements": [{ "source": "template.entitlements:1.0" }],
         },
@@ -26,7 +26,7 @@
             {
               "repo": "https://github.com/selaux/ocp-policies-reproducer.git",
               "reference": "policy2",
-              "excluded_files": [".*/*"],
+              "excluded_files": [".*/*", "pipeline.yaml"],
             },
           "requirements": [{ "source": "template.entitlements:1.0-stack" }],
         },
